@@ -1,0 +1,28 @@
+html, body {
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 150px) 200px;
+    grid-template-rows: 200px repeat(3, 100px);
+}
+
+.sidebar {
+    grid-area: 1/ 1/ -1 / 2;
+    border: 2px solid blue;
+    display: grid;
+    grid-template-rows: 3fr repeat(9, 1fr);
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+.header {
+    grid-area: 1/ 2/ 2/ 5;
+    border: 2px solid red;
+}
+
+.main-content {
+    grid-area: 2/ 2 / -1 / -1 ;
+    border: 2px solid green;
+}
