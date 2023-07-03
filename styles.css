@@ -14,12 +14,29 @@ html, body {
     display: grid;
     grid-template-rows: 3fr repeat(9, 1fr);
     grid-template-columns: 100%;
-    text-align: center;
+    align-items: center;
+}
+
+.sb-element#title {
+    display: flex;
+    justify-content: space-around;
 }
 
 .header {
     grid-area: 1/ 2/ 2/ 5;
     border: 2px solid red;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.header .search-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.search-main > * {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .main-content {
